@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity2">
+        <TextView
+                android:text="ADDRESS"
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:textSize="15sp"
+        tools:ignore="InvalidId" />
+        <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:text="CAPITAL"
+                android:textAlignment="center"
+                android:layout_below="@+id/editview"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_below="@id/textView4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Chennai" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_below="@+id/editTextTextPersonName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="STATE" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView5"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="TamilNadu" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_below="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="COUNTRY" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView6"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="India" />
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextPersonName5"
+                android:text="submit Information" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_add"
+                android:id="@+id/btn_back"
+                android:text="back"/>
+
+</RelativeLayout>

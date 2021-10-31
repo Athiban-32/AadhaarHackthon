@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_holder"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="UnknownId">
+
+        <TextView
+            android:id="@+id/textview_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello capture or choose an image from the galary to perform OCR"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linear_holder"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="capture"
+            android:textColor="@color/black"
+            android:background="@color/black"
+            android:layout_margin="8dp"
+            tools:ignore="InvalidId" />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/button_copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="copy-text"
+            android:textColor="@color/black"
+            android:background="@color/black"
+            android:layout_margin="8dp"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next"
+            android:textColor="@color/black"
+            android:background="@color/black"
+            android:layout_margin="8dp"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/button_verify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="verify"
+            android:textColor="@color/black"
+            android:background="@color/black"
+            android:layout_margin="8dp"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
